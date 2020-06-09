@@ -3,3 +3,4 @@ project.config.json
 .gitignore
 .idea/
 .node_modules/
+dist/
