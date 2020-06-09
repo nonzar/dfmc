@@ -1,0 +1,163 @@
+.footer {
+  background-color: #262c37;
+  color: #fff;
+  padding: 80px 0 60px; }
+  .footer .bd {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .footer .nav {
+    display: flex; }
+    .footer .nav dl {
+      text-align: center; }
+      .footer .nav dl dt {
+        font-size: 20px;
+        padding-bottom: 10px; }
+      .footer .nav dl dd {
+        font-size: 16px;
+        margin: 15px 0; }
+        .footer .nav dl dd a {
+          font-size: 16px;
+          color: #fff; }
+      .footer .nav dl + dl {
+        padding-left: 120px; }
+  .footer .info {
+    text-align: right;
+    font-size: 16px; }
+    .footer .info .logo {
+      display: block; }
+    .footer .info .text {
+      margin-top: 26px; }
+      .footer .info .text p {
+        margin: 15px 0; }
+
+.logo .text-center {
+  text-align: center; }
+
+.logo .desc {
+  text-align: center; }
+  .logo .desc p {
+    font-size: 16px; }
+
+.logo .title {
+  text-align: center; }
+  .logo .title h3 {
+    font-weight: 400;
+    font-size: 60px; }
+  .logo .title .desc {
+    margin-top: 20px; }
+
+.logo .layout {
+  width: 1800px;
+  margin: 60px auto; }
+
+.logo .gallery .item {
+  margin: 0 auto 25px;
+  position: relative;
+  display: flex;
+  justify-content: space-between; }
+  .logo .gallery .item img {
+    display: block; }
+  .logo .gallery .item .box {
+    font-size: 16px;
+    align-self: center; }
+
+.logo .gallery2 {
+  display: flex;
+  justify-content: space-between; }
+  .logo .gallery2 .item {
+    flex: 0 0 50%;
+    display: flex;
+    position: relative; }
+    .logo .gallery2 .item h4 {
+      font-size: 20px;
+      font-weight: 600; }
+    .logo .gallery2 .item p {
+      font-size: 16px; }
+    .logo .gallery2 .item img {
+      display: block; }
+    .logo .gallery2 .item .box {
+      position: absolute;
+      top: 25%; }
+      .logo .gallery2 .item .box .text {
+        margin-top: 30px; }
+    .logo .gallery2 .item.left {
+      flex-direction: row-reverse; }
+      .logo .gallery2 .item.left .box {
+        text-align: right;
+        left: 0; }
+    .logo .gallery2 .item.right .box {
+      right: 0; }
+    .logo .gallery2 .item + .item {
+      margin-left: 30px; }
+
+.logo .gallery3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .logo .gallery3 .item {
+    width: 210px;
+    height: 150px;
+    display: block; }
+
+.logo .gallery4 .item img {
+  display: block; }
+
+.logo .m-banner {
+  background: url(../resources/images/logo/kv.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .logo .m-banner .slogan {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .logo .m-banner .slogan h3 {
+      font-weight: 400;
+      font-size: 60px; }
+    .logo .m-banner .slogan p {
+      font-size: 16px;
+      margin: 12px; }
+    .logo .m-banner .slogan .text {
+      margin-top: 50px; }
+
+.logo .m-factory .gallery2 {
+  margin-top: 30px; }
+
+.logo .m-explore {
+  background: url(../resources/images/logo/bg.jpg) repeat-y 50% 50%;
+  background-size: 100% auto; }
+  .logo .m-explore .gallery h3 {
+    font-size: 60px;
+    margin-bottom: 50px; }
+  .logo .m-explore .gallery > .item:nth-child(1) {
+    width: 1100px; }
+  .logo .m-explore .gallery > .item:nth-child(2) {
+    width: 1580px; }
+  .logo .m-explore .gallery > .item:nth-child(3) {
+    width: 1580px; }
+  .logo .m-explore .gallery > .item:nth-child(4) {
+    width: 1580px; }
+  .logo .m-explore .gallery > .item:nth-child(5) {
+    width: 1580px; }
+
+.logo .m-vision {
+  background: #000 url(../resources/images/logo/bg2.jpg) no-repeat 50% 100%;
+  background-size: contain;
+  color: #fff;
+  height: 740px;
+  position: relative; }
+  .logo .m-vision .layout {
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .logo .m-vision .title {
+    position: relative;
+    top: 15%; }
+    .logo .m-vision .title .desc p {
+      font-size: 30px; }

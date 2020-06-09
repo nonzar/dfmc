@@ -1,0 +1,173 @@
+@import "tian";
+.about {
+  .desc {
+    text-align: center;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .title {
+    text-align: center;
+
+    h3 {
+      font-weight: 400;
+      font-size: 60px;
+    }
+
+    .desc {
+      margin-top: 20px;
+    }
+  }
+
+  .btn {
+    background: url(../resources/images/about/btn.png) no-repeat 50% 50%;
+    background-size: cover;
+    width: 160px;
+    height: 47px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .layout {
+    width: 1800px;
+    margin: 60px auto;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      font-size: 24px;
+      color: #fff;
+      position: relative;
+
+      img {
+        display: block;
+      }
+
+      label {
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .gallery2 {
+    display: flex;
+
+    .item {
+      img {
+        display: block;
+      }
+    }
+
+    > .item:nth-child(1) {
+
+    }
+
+    > .item:nth-child(2) {
+
+    }
+  }
+
+  .gallery3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+      width: 210px;
+      height: 150px;
+      display: block;
+    }
+  }
+
+  .gallery4 {
+    .item {
+      img {
+        display: block;
+      }
+    }
+  }
+
+  .m-banner {
+    background: url(../resources/images/about/kv.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .slogan {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      h3 {
+        font-weight: 400;
+        font-size: 60px;
+      }
+
+      .btn {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .m-factory {
+    .gallery2 {
+      margin-top: 30px;
+    }
+  }
+
+  .m-team {
+    .gallery {
+      margin-top: 30px;
+    }
+
+    > .desc {
+      margin-top: 35px;
+    }
+  }
+
+  .m-partner {
+    width: 210*6px;
+    margin-top: 110px;
+
+    .gallery3 {
+      margin-top: 90px;
+    }
+  }
+
+  .m-address {
+    width: 1550px;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .title, .desc {
+      text-align: left;
+    }
+
+    .desc {
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    .address {
+      display: flex;
+
+      > * {
+        align-self: center;
+      }
+    }
+  }
+}
