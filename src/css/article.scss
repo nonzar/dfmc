@@ -1,0 +1,76 @@
+@import "tian";
+
+.article {
+  border-top: solid 75px #262c37;
+
+  .m-article {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .article-hd {
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: solid #f3f3f3 1px;
+
+      h3 {
+        font-size: 48px;
+      }
+
+      .info {
+        margin-top: 30px;
+      }
+
+      p {
+        font-size: 20px;
+
+        span {
+          color: #d1d1d1;
+        }
+      }
+    }
+
+    .article-bd {
+      .content {
+        line-height: 1.6;
+        font-size: 16px;
+        overflow: hidden;
+
+        p {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 10000px) {
+  .article {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+@media screen and(max-width: 1920px) {
+
+
+}
+
+@media screen and(max-width: 1200px) {
+  .article {
+    .container {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  }
+}
+
+@media screen and(max-width: 992px) {
+}
+
+@media screen and(max-width: 768px) {
+}

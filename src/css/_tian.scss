@@ -53,6 +53,34 @@
   }
 }
 
+.g-crumbs {
+  background-color: #f7f7f7;
+  font-size: 16px;
+  height: 42px;
+  display: flex;
+
+  a {
+    font-size: 16px;
+    color: #3f3e3d;
+  }
+  .bd {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+
+    > div:nth-child(1) {
+      a{
+        margin-right: 8px;
+
+        & + a {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+}
+
 .layout {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -67,6 +95,13 @@
   .footer {
     .bd {
       width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .g-crumbs {
+    .bd {
+      width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }

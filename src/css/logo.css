@@ -30,6 +30,23 @@
       .footer .info .text p {
         margin: 15px 0; }
 
+.g-crumbs {
+  background-color: #f7f7f7;
+  font-size: 16px;
+  height: 42px;
+  display: flex; }
+  .g-crumbs a {
+    font-size: 16px;
+    color: #3f3e3d; }
+  .g-crumbs .bd {
+    align-self: center;
+    display: flex;
+    justify-content: space-between; }
+    .g-crumbs .bd > div:nth-child(1) a {
+      margin-right: 8px; }
+      .g-crumbs .bd > div:nth-child(1) a + a {
+        margin-left: 8px; }
+
 .layout {
   margin-top: 60px;
   margin-bottom: 60px; }
@@ -41,6 +58,10 @@
     margin-right: auto; }
   .footer .bd {
     width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
+  .g-crumbs .bd {
+    width: 1200px;
     margin-left: auto;
     margin-right: auto; } }
 
