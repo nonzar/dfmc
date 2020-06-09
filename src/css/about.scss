@@ -1,4 +1,5 @@
 @import "tian";
+
 .about {
   .desc {
     text-align: center;
@@ -30,28 +31,29 @@
     overflow: hidden;
   }
 
-  .layout {
-    width: 1800px;
-    margin: 60px auto;
-  }
-
   .gallery {
     display: flex;
     justify-content: space-between;
 
     .item {
+      flex: 1;
       font-size: 24px;
       color: #fff;
       position: relative;
 
       img {
+        width: 100%;
         display: block;
       }
 
       label {
         position: absolute;
-        right: 40px;
-        bottom: 30px;
+        right: 10%;
+        bottom: 3.6%;
+      }
+
+      & + .item {
+        margin-left: 20px;
       }
     }
   }
@@ -60,35 +62,57 @@
     display: flex;
 
     .item {
+      overflow: hidden;
+
       img {
+        width: 100%;
         display: block;
       }
     }
 
     > .item:nth-child(1) {
-
+      flex: 0 0 percentage(2/3);
     }
 
     > .item:nth-child(2) {
+      flex: 0 0 percentage(1/3);
 
+      .item {
+        height: 50%;
+        position: relative;
+
+        img {
+          width: auto;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
     }
   }
 
   .gallery3 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    //justify-content: space-between;
 
     .item {
-      width: 210px;
-      height: 150px;
-      display: block;
+      img{
+        width: 100%;
+        display: block;
+      }
     }
   }
 
   .gallery4 {
+    overflow: hidden;
     .item {
+      display: flex;
+      justify-content: center;
       img {
+        width: auto;
+        height: 100%;
         display: block;
       }
     }
@@ -122,6 +146,7 @@
 
   .m-factory {
     .gallery2 {
+      width: 100%;
       margin-top: 30px;
     }
   }
@@ -137,16 +162,40 @@
   }
 
   .m-partner {
-    width: 210*6px;
+    max-width: 180*6px;
+    //margin-top: 110px;
     margin-top: 110px;
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+      border-radius: initial;
+      background-color: #d3d3d3;
+      width: 120px;
+      height: 2px;
+    }
+
+    .swiper-pagination-bullet-active {
+      height: 4px;
+    }
 
     .gallery3 {
       margin-top: 90px;
+      margin-bottom: 90px;
     }
   }
 
   .m-address {
-    width: 1550px;
     margin-top: 160px;
     display: flex;
     flex-direction: row-reverse;
@@ -163,11 +212,83 @@
     }
 
     .address {
+      padding-left: 20px;
       display: flex;
 
       > * {
         align-self: center;
       }
     }
+    .gallery4{
+      max-width: 1010px;
+      flex: 1;
+    }
   }
+}
+
+
+@media screen and(max-width: 10000px) {
+  .gallery3{
+    .item{
+      flex: 0 0 percentage(1/6);
+    }
+  }
+  .m-partner{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .m-address{
+    .address{
+      flex: 0 0 550px;
+    }
+  }
+}
+
+@media screen and(max-width: 1920px) {
+  .m-address{
+    .address{
+      flex: 0 0 400px;
+    }
+  }
+
+}
+
+@media screen and(max-width: 1200px) {
+  .gallery3{
+    .item{
+      flex: 0 0 percentage(1/5);
+    }
+  }
+  .m-partner{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and(max-width: 992px) {
+  .gallery3{
+    .item{
+      flex: 0 0 percentage(1/4);
+    }
+  }
+  .m-address{
+    .address{
+      flex: 0 0 300px;
+    }
+  }
+
+}
+
+@media screen and(max-width: 768px) {
+  .gallery3{
+    .item{
+      flex: 0 0 percentage(1/3);
+    }
+  }
+  .m-address{
+    .address{
+      flex: 0 0 200px;
+    }
+  }
+
 }
