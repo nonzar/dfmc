@@ -5,7 +5,7 @@
     text-align: center;
 
     p {
-      font-size: 16px;
+      font-size: (16em/24);
     }
   }
 
@@ -14,19 +14,19 @@
 
     h3 {
       font-weight: 400;
-      font-size: 60px;
+      font-size: (60em/24);
     }
 
     .desc {
-      margin-top: 20px;
+      margin-top: (20em/24);
     }
   }
 
   .btn {
     background: url(../resources/images/about/btn.png) no-repeat 50% 50%;
     background-size: cover;
-    width: 160px;
-    height: 47px;
+    width: (160em/24);
+    height: (47em/24);
     display: inline-block;
     overflow: hidden;
   }
@@ -37,7 +37,7 @@
 
     .item {
       flex: 1;
-      font-size: 24px;
+      font-size: 1em;
       color: #fff;
       position: relative;
 
@@ -53,7 +53,7 @@
       }
 
       & + .item {
-        margin-left: 20px;
+        margin-left: (20em/24);
       }
     }
   }
@@ -135,11 +135,11 @@
 
       h3 {
         font-weight: 400;
-        font-size: 60px;
+        font-size: 2.5em;
       }
 
       .btn {
-        margin-top: 30px;
+        margin-top: (30em/24);
       }
     }
   }
@@ -147,24 +147,23 @@
   .m-factory {
     .gallery2 {
       width: 100%;
-      margin-top: 30px;
+      margin-top: (30em/24);
     }
   }
 
   .m-team {
     .gallery {
-      margin-top: 30px;
+      margin-top: (30em/24);
     }
 
     > .desc {
-      margin-top: 35px;
+      margin-top: (30em/24);
     }
   }
 
   .m-partner {
     max-width: 180*6px;
-    //margin-top: 110px;
-    margin-top: 110px;
+    margin-top: (110em/24);
 
     .swiper-container {
       width: 100%;
@@ -181,7 +180,7 @@
     .swiper-pagination-bullet {
       border-radius: initial;
       background-color: #d3d3d3;
-      width: 120px;
+      width: (120em/24);
       height: 2px;
     }
 
@@ -190,13 +189,13 @@
     }
 
     .gallery3 {
-      margin-top: 90px;
-      margin-bottom: 90px;
+      margin-top: (90em/24);
+      margin-bottom: (90em/24);
     }
   }
 
   .m-address {
-    margin-top: 160px;
+    margin-top: (160em/24);
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -207,12 +206,12 @@
 
     .desc {
       p {
-        margin: 10px 0;
+        margin: (10em/24) 0;
       }
     }
 
     .address {
-      padding-left: 20px;
+      padding-left: (20em/24);
       display: flex;
 
       > * {
@@ -254,23 +253,13 @@
 }
 
 @media screen and(max-width: 1200px) {
-  .gallery3{
-    .item{
-      flex: 0 0 percentage(1/5);
-    }
-  }
   .m-partner{
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: (60em/24);
+    margin-right: (60em/24);
   }
 }
 
 @media screen and(max-width: 992px) {
-  .gallery3{
-    .item{
-      flex: 0 0 percentage(1/4);
-    }
-  }
   .m-address{
     .address{
       flex: 0 0 300px;
@@ -280,11 +269,6 @@
 }
 
 @media screen and(max-width: 768px) {
-  .gallery3{
-    .item{
-      flex: 0 0 percentage(1/3);
-    }
-  }
   .m-address{
     .address{
       flex: 0 0 200px;

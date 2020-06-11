@@ -9,7 +9,7 @@
     text-align: center;
 
     p {
-      font-size: 16px;
+      font-size: (16em/24);
     }
   }
 
@@ -18,17 +18,17 @@
 
     h3 {
       font-weight: 400;
-      font-size: 60px;
+      font-size: (60em/24);
     }
 
     .desc {
-      margin-top: 20px;
+      margin-top: (20em/24);
     }
   }
 
   .gallery {
     .item {
-      margin-bottom: 25px;
+      margin-bottom: 1em;
       position: relative;
       display: flex;
       justify-content: space-between;
@@ -133,41 +133,41 @@
 
       h3 {
         font-weight: 400;
-        font-size: 60px;
+        font-size: (60em/24);
       }
 
       p {
-        font-size: 16px;
-        margin: 12px;
+        font-size: (16em/24);
+        margin: 0.5em;
       }
 
       .text {
-        margin-top: 50px;
+        margin-top: 2em;
       }
     }
   }
 
   .m-mean {
     .gallery2 {
-      margin-top: 30px;
+      margin-top: (30em/24);
     }
   }
 
   .m-explore {
     background: url(../resources/images/logo/bg.jpg) repeat-y 50% 50%;
     background-size: 100% auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: (60em/24);
+    padding-bottom: (60em/24);
 
     .gallery {
       h3 {
-        font-size: 60px;
-        margin-bottom: 50px;
+        font-size: (60em/24);
+        margin-bottom: 2em;
       }
     }
 
     @media screen and(max-width: 1600px) {
-      > .bd:nth-child(1),
+      //> .bd:nth-child(1),
       > .bd:nth-child(2) {
         width: auto;
         margin-left: 60px;
@@ -200,24 +200,24 @@
   .gallery2 {
     .item {
       h4 {
-        font-size: 20px;
+        font-size: (20em/24);
       }
 
       p {
-        font-size: 16px;
+        font-size: (16em/24);
       }
 
       .box {
         top: 25%;
 
         .text {
-          margin-top: 30px;
+          margin-top: (30em/24);
         }
       }
 
 
       & + .item {
-        margin-left: 20px;
+        margin-left: (20em/24);
       }
     }
   }
@@ -240,44 +240,59 @@
   .gallery {
     .item {
       .box {
-        font-size: 16px;
-        flex: 0 0 380px;
+        font-size: (16em/24);
 
         .text {
           p {
-            margin: 10px 0;
+            margin: (10em/24) 0;
           }
         }
       }
 
       &.left {
         .box {
-          margin-right: 50px;
+          margin-right: 2em;
         }
       }
 
       &.right {
         .box {
-          margin-left: 50px;
+          margin-left: 2em;
+        }
+      }
+    }
+  }
+  .m-explore{
+    >.bd{
+      .gallery:nth-child(1){
+        .item{
+          .box{
+            flex: 0 0 550px;
+
+          }
+        }
+      }
+      .gallery:nth-child(2){
+        .item{
+          .box{
+            flex: 0 0 380px;
+          }
         }
       }
     }
   }
   .m-vision {
-    height: 740px;
+    height: (740em/24);
 
     .desc {
       p {
-        font-size: 30px;
+        font-size: (30em/24);
       }
     }
   }
 }
 
 @media screen and(max-width: 1920px) {
-  .m-vision {
-    height: 600px;
-  }
 }
 
 @media screen and(max-width: 1200px) {
@@ -285,24 +300,22 @@
     .item {
       &.left {
         .box {
-          margin-right: 30px;
+          margin-right: (30em/24);
         }
       }
 
       &.right {
         .box {
-          margin-left: 30px;
+          margin-left: (30em/24);
         }
       }
     }
   }
-  .m-vision {
-    height: 400px;
-
-    .desc {
-      p {
-        font-size: 26px;
-      }
+  .m-explore{
+    > .bd:nth-child(1){
+      width: auto;
+      margin-left: 60px;
+      margin-right: 60px;
     }
   }
 }
@@ -311,7 +324,7 @@
   .gallery {
     .item {
       .box {
-        font-size: 12px;
+        font-size: (16em/24);
         flex: 0 0 280px;
 
         .text {
@@ -323,13 +336,13 @@
 
       &.left {
         .box {
-          margin-right: 10px;
+          margin-right: 0.5em;
         }
       }
 
       &.right {
         .box {
-          margin-left: 10px;
+          margin-left: 0.5em;
         }
       }
     }
@@ -337,32 +350,23 @@
   .gallery2 {
     .item {
       h4 {
-        font-size: 16px;
+        font-size: (16em/24);
       }
 
       p {
-        font-size: 12px;
+        font-size: (16em/24);
       }
 
       .box {
         top: 0;
 
         .text {
-          margin-top: 10px;
+          margin-top: 0.5em;
         }
       }
 
       & + .item {
-        margin-left: 10px;
-      }
-    }
-  }
-  .m-vision {
-    height: 300px;
-
-    .desc {
-      p {
-        font-size: 18px;
+        margin-left: 0.5em;
       }
     }
   }
